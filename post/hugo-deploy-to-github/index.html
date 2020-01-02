@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<meta name="keywords" content="">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="Hugo deploy to GitHub" />
+<meta property="og:site_name" content="Siliconion" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="http://siliconion.github.io/post/hugo-deploy-to-github/" />
+<meta property="og:locale" content="en-us" />
+<meta property="article:published_time" content="2020-01-02
+" /> <meta property="article:modified_time" content="2020-01-02
+" />
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@siliconion" />
+<meta name="twitter:creator" content="@siliconion" />
+<meta
+  name="twitter:title"
+  content="Hugo deploy to GitHub | Siliconion"
+/>
+<meta
+  name="twitter:description"
+  content="This blog is powered by Hugo. It is so easy to use! Hugo blogs can be easily deployed to GitHub by following this tutorial.
+The only 2 things I had problem with were:
+ When first deployed, my GitHub page kept 404 although all html files are update in the my .github.io repo. To solve this, go to &ldquo;settings&rdquo; in the repo, scroll down to &ldquo;GitHub Pages&rdquo;, make sure the correct branch is chosen in the source.|"
+/>
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="http://siliconion.github.io/post/hugo-deploy-to-github/" />
+
+
+
+    <title>Hugo deploy to GitHub</title>
+    <link rel="canonical" href="http://siliconion.github.io/post/hugo-deploy-to-github/" />
+
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
+/>
+
+<link rel="stylesheet" href="http://siliconion.github.iocss/style.css" />
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
+/>
+
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+
+
+<body
+  lang="en-us"
+  class="sans-serif w-90 w-80-m w-60-ns center mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+  <span class="b">/ </span>
+  <a href="http://siliconion.github.io" class="b bb bw1 pb1 no-underline black">Siliconion</a>
+  <span class="b"> / </span>
+  <a href="/post" class="b bb bw1 pb1 no-underline black">blog</a>
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">Hugo deploy to GitHub</h1>
+    <span class="f6 gray">January 2, 2020</span>
+
+      <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+        <p>This blog is powered by <a href="https://gohugo.io/">Hugo</a>. It is so easy to use! Hugo blogs can be easily deployed to GitHub by following <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">this tutorial</a>.</p>
+
+<p>The only 2 things I had problem with were:</p>
+
+<ol>
+<li><p>When first deployed, my GitHub page kept 404 although all html files are update in the my <username>.github.io repo. To solve this, go to &ldquo;settings&rdquo; in the repo, scroll down to &ldquo;GitHub Pages&rdquo;, make sure the correct branch is chosen in the source. Also choose a Jekyll theme even we are not using Jekyll.</p></li>
+
+<li><p>I followed the doc and created a submodule, and in no time it&rsquo;s all messed up. Git submodule is a mystery not worth solving. So I cloned the <username>.github.io repo outside of my source repo, and copy the files in public into it. My modified script is <a href="https://github.com/siliconion/siliconion_hugo/blob/master/deploy.sh">here</a>.</p></li>
+</ol>
+
+<p>I probably should setup CD but meh.</p>
+
+      </article>
+
+      
+      <span class="f6 gray mv3" title="Lastmod: January 2, 2020. Published at: 2020-01-02.">
+        
+          <span class="i">last modified</span> January 2, 2020
+        
+      </span>
+
+      
+
+  </section>
+
+  <footer>
+    <div>
+      <p class="f6 gray mt6 lh-copy">
+        &copy;Siliconion 2019
+      </p>
+    </div>
+  </footer>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+  </body>
+</html>

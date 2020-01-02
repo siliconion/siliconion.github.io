@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy;Siliconion 2019</copyright>
-    <lastBuildDate>Sun, 08 Sep 2019 13:18:48 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2020 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://siliconion.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo deploy to GitHub</title>
+      <link>http://siliconion.github.io/post/hugo-deploy-to-github/</link>
+      <pubDate>Thu, 02 Jan 2020 00:00:00 -0500</pubDate>
+      
+      <guid>http://siliconion.github.io/post/hugo-deploy-to-github/</guid>
+      <description>This blog is powered by Hugo. It is so easy to use! Hugo blogs can be easily deployed to GitHub by following this tutorial.
+The only 2 things I had problem with were:
+ When first deployed, my GitHub page kept 404 although all html files are update in the my .github.io repo. To solve this, go to &amp;ldquo;settings&amp;rdquo; in the repo, scroll down to &amp;ldquo;GitHub Pages&amp;rdquo;, make sure the correct branch is chosen in the source.</description>
+    </item>
     
     <item>
       <title>What To Make At ATX Diversity Hackathon</title>
