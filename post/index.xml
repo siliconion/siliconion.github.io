@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Siliconion</title>
+    <link>http://siliconion.github.io/post/</link>
+    <description>Recent content in Posts on Siliconion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy;Siliconion 2019</copyright>
+    <lastBuildDate>Sun, 08 Sep 2019 13:18:48 -0500</lastBuildDate>
+    
+	<atom:link href="http://siliconion.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What To Make At ATX Diversity Hackathon</title>
+      <link>http://siliconion.github.io/post/what-to-make-at-atx-diversity-hackathon/</link>
+      <pubDate>Sun, 08 Sep 2019 13:18:48 -0500</pubDate>
+      
+      <guid>http://siliconion.github.io/post/what-to-make-at-atx-diversity-hackathon/</guid>
+      <description>In terms of what to make, there are 3 aspects - the content, the technology and the goal.
+For content, there&amp;rsquo;s no limitation at the Austin diversity hackathon. A lot of hackathons have themes - use of certain products, or help certain causes. At #ATXDIVHACK, social conscious projects that promotes inclusion, diversity are strongly encouraged. But you can make anything (within our CoC of course)!
+In terms of the technology used, here are some ideas and past projects:</description>
+    </item>
+    
+    <item>
+      <title>Why You Should Come to ATX Diversity Hackathon</title>
+      <link>http://siliconion.github.io/post/why-you-should-come-to-atx-diversity-hackathon/</link>
+      <pubDate>Sun, 08 Sep 2019 11:39:28 -0500</pubDate>
+      
+      <guid>http://siliconion.github.io/post/why-you-should-come-to-atx-diversity-hackathon/</guid>
+      <description>The Annual Austin Diversity Hackathon - #ATXDivHack - is coming back for the 5th time in September 20~22, 2019! If you are still wondering if you should come &amp;ndash; you totally should! And here are the reasons.
+I love #ATXDivHack so much. I&amp;rsquo;ve &amp;ldquo;hacked&amp;rdquo; for the last 3 years, and am the organizer this year. #ATXDIVHACK is a beginner friendly, inclusive, and fun event. The goal is for all participants to: * Learn something new * Make friends and connections * Have fun!</description>
+    </item>
+    
+  </channel>
+</rss>
