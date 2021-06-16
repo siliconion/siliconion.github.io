@@ -7,20 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy;Siliconion 2019</copyright>
-    <lastBuildDate>Fri, 17 Jan 2020 11:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2020 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://siliconion.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Solving the Python night problem - my approach</title>
-      <link>http://siliconion.github.io/post/solving-the-python-night-problem-my-approach/</link>
-      <pubDate>Fri, 17 Jan 2020 11:00:00 +0000</pubDate>
-      
-      <guid>http://siliconion.github.io/post/solving-the-python-night-problem-my-approach/</guid>
-      <description>The Women Who Code Austin Python night is a blast! Our instructor, Julia, is doing a fantastic job teaching.
-The last coding exercise on 1&amp;frasl;15 meetup is: Write a function that accepts a string and returns a dictionary of words as the keys, and the number of times each word appeared as a value. Make sure that the mapping works with words reardless of case, and handle punctuation. challenge from Python Morsels Hint - write iteratively - first write the basic functionality, then augment If natural language processing is interesting to you, check out the NLTK library and documentation</description>
-    </item>
     
     <item>
       <title>Hugo deploy to GitHub</title>
