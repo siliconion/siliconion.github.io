@@ -7,10 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy;Siliconion 2019</copyright>
-    <lastBuildDate>Fri, 01 Jan 2021 15:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jan 2022 15:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://siliconion.github.io/post_zh_tw/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>New Year Resolution - 2022</title>
+      <link>http://siliconion.github.io/post_zh_tw/newyearresolution2022/</link>
+      <pubDate>Sat, 08 Jan 2022 15:00:00 -0500</pubDate>
+      
+      <guid>http://siliconion.github.io/post_zh_tw/newyearresolution2022/</guid>
+      <description>2021&amp;hellip;.怎麼說呢，感覺不曾發生，但又像是永遠不會結束。工作先是換了新組；二月一場大雪讓德州停了兩天的電之後又停了三天的水。四月底工作上 anxiety attack 又爆發，果斷離職。壓垮我的最後一根稻草是被 manager 說進度太慢，當時自己怎麼這麼不上手，但回頭看來，也不過做了四個月，那個 ticket 是在這超級過度複雜的系統裡，加一個從 react 前端，到 API gateway、lambda、SQS、Step function、container、S3、cloudfront + lambda@edge 的 feature，還有值一直傳不過去是因為有人 hard-code 了變數這種鳥 bug。
+離職的那個週末去 Kruas Spring 露營，非常療癒。五月去玩了紐約－費城－芝加哥，基本上是一趟靠前同事之旅，在紐約和芝加哥都借住Ｉ公司的朋友家。兩人都在念 MBA，未來有無限可能的感覺好棒啊。在疫情中的旅遊，還是有點蕭索，離家三個禮拜，到最後真心的想家了。
+看了一下，其實回來不久就開始考慮工作的事了，六月開始有找些人談，七月的行事曆已經全都是各種面試。最後在Ｉ家和Ｓ家猶豫不決，得到了全都再去談談看的建議，非常受用。
+八月底上工。前一個禮拜全都是法規。onboard 的算是順利。九月發現了攀岩的 meetup，一直固定參加。也開始溜冰，會和同事去roller rink 晃，雖然溜得超爛。
+十二月和女生朋友們去了田納西 smokey mountain，美國真的很大，總有想不到的地方呢。
+回顧去年的願望，發現像是體重啊，重訓啊，其他的興趣等等，都工作壓力息息相關。離開高壓 toxic 的環境，很多事情都迎刃而解了呢。體重也回到132~134了，體脂也降到26左右了，重訓沒什麼進步，不過引體向上在偶然狀態超好的時候可以做一個。固定去抱石聚會，在同儕壓力之下也從原本只能爬 V1 進步到能爬一點點 V3 了。
+工作的願望當然全部沒達成，疫情關係畫畫課也沒上，義工也沒進展。仔細檢討，這種放單一目標的願望清單其實很難達成，也不是很有作為當年方針的效果。根據這篇文章所說，比較有效的應該是做回顧，然後把好的部分馬上排進行程，不好的部分列出重點來排除。
+好的部分 高品質的 connection 我一直覺得我是內向型，和人相處會消耗掉精力。後來發現也不盡然，和很好的朋友亂聊對心理健康超有幫助。
+年底一次和幾個不熟的女工程師的短時間真人聚會也很棒，覺得有學到東西，又沒有壓力。
+疫情不嚴重時，bouldering meetup 之後大家都會去隔壁喝一杯。攀岩人口很多工程師，所以要融入不難，但又有很多很酷的人（像是在州立公園做林道維護的森林系女生），所以話題很多元。
+這個部分，已經計畫固定週六和朋友的讀書會（說是讀書會都沒在讀書），另外週二的bouldering meetup 排入固定行程。
+Women who code 的部分要看疫情了，哎～
+健康管理 之前壓力大，加上出去玩，一度胖到爆 140 磅。我很想說體重的數字不重要，但說真的我就是很在意啊。八月中受到噗友感召開始新生活運動，算熱量後很順利地減下來，而且都減到脂肪，一度達到體重 132，不是很輕，但肚子很平的狀態。但一鬆懈下來吃了不少甜點，肚子就又長回去了。但說真的瘦下來真的很爽快啊～
+這個部分，新年找了遠端的教練，提供飲食建議＋重訓菜單，所以希望維持起來容易些。目前是把和他溝通的時間計劃在早上工作前的 routine 之中。
+除此之外，還排了和老公的固定每週散步時間。這也可以算在上一點之中。
+計畫 我 positive 欄位的其中一點是「雖然面試很累，但能把全部面試時程排好超有成就感」</description>
+    </item>
     
     <item>
       <title>New Year Resolution - 2021</title>
