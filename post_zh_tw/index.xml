@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy;Siliconion 2019</copyright>
-    <lastBuildDate>Sat, 08 Jan 2022 15:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 29 Dec 2022 15:00:00 -0500</lastBuildDate>
     
 	<atom:link href="http://siliconion.github.io/post_zh_tw/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>New Year Resolution - 2023</title>
+      <link>http://siliconion.github.io/post_zh_tw/newyearresolution2023/</link>
+      <pubDate>Thu, 29 Dec 2022 15:00:00 -0500</pubDate>
+      
+      <guid>http://siliconion.github.io/post_zh_tw/newyearresolution2023/</guid>
+      <description>年底最後一週請了假，今年一整年湊到二十一天ＰＴＯ。要說什麼真的值得追蹤的 metrics，這應該是最重要的之一吧。
+2022 年是一個好年，很多新嘗試都很順利。
+回顧 工作 工作方面應該是變化最大的。去年底本組的 tech lead 轉去另一個組。一開始我是不想接 tech lead 的，但也沒其他人想接，到最後每天在做的事跟 tech lead 也差不多，但又沒有頭銜很不方便。於是就跟老闆Ｔ說我有意願，最後六月中有了 tech lead 的頭銜。工作內容也差蠻多的，但差別不在頭銜，而是整個組全職都走光剩我一個，帶著三個巴西外包弟弟，老闆Ｔ手上有四個組根本忙不過來。於是做了很多 project management 和 planning 之類的事。做了以後覺得還蠻得心應手的，尤其見縫插針找到機會，把一個 project 做到同時滿足三個不同的ＯＫＲ，真的是有夠爽快。
+健康＆運動 年初找了一個台灣的重訊教練，沒有特別目標，但在有人盯，加上他開的菜單逼我做了高次數訓練，體重和體脂都有下降。但六月時想增加攀岩的比重，所以和他分手，之後又全部胖回來了。年底的體重還比年初重一點，哎～
+不過六月底終於成功爬了人生第一個ＡＢＰ藍線（Ｖ５）！七月初去了戶外攀岩之後，被「限量」兩字迷惑買了十月的 Continental ranch 門票，買了才發現需要懂 lead climb，於是開始一連串到處攀關係蹭經驗值的行為。很幸運的遇到願意教我的艾琳和凱西，從九月開始幾乎每週日都去 Reimer&amp;rsquo;s ranch 報到。
+說真的，本身身體素質感覺沒什麼提升，但技巧有變好，foot work 被提點過後真的進步不少，雖然到了年底，爬過的藍線也只增加到五條啦。
+義工 今年 women who code 還是無法辦任何實體活動。但今年開了讀書會，上半年讀了 design data intensive application，下半年讀了 clean code。前一本我覺得還蠻成功的，這本書很有深度，很多新知，也把以前的概念融會貫通。因為是中高階的書，參加者很多不同背景的資深工程師，從大家身上學到很多。無瑕的程式碼就還好，整本書說教感太重，範例太偏。
+另外推坑了Ｑ做白板面試活動，目前做了五個月，相當成功。我覺得這是我對義工活動最大的領悟——不能光靠熱血。的確有很多熱心的人，但只靠別人的善意，不是長久之計。必須找出雙贏之道，並且把辦活動的人力成本降到最低。這次推坑Ｑ，就建議她多找不同的人來示範，不要全都自己做，一開始都是從有交情的朋友開始找，而在每個月都有不同人示範後，有些陌生的參加者也有興趣示範了。
+但說了這麼多，年底還是決定要推出經營 women who code 了，也把從轉行開始就做到現在的 lightning talk 停掉了。明年要做什麼現在還在猶豫中。
+興趣＆其他 今年衝動的報名了社區大學的 drawing 1，和一堆小朋友上課，發現小朋友們遵守指示的能力還蠻差的，但話說回來，藝術家怎麼能乖乖聽從指示呢。上課實作的時候，教授會唸一些藝術史的書給我們聽，讓我開始對藝術史有點興趣。不過每週兩個晚上的課還真的是有點吃不消。
+今年四月和朋友一起辦了盛大的四十歲生日趴，過程中也是吵過架，但辦完之後還是朋友，可喜可賀。
+2022 的願望 2022 不算是新年願望，而比較像是新年計劃。回頭看看，達成率超高！但主要是領悟了ＯＫＲ不能寫太死這個道理呀。</description>
+    </item>
     
     <item>
       <title>New Year Resolution - 2022</title>
