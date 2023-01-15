@@ -3,17 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://siliconion.github.io/post/a-tale-of-code-not-maintained/</loc>
+    <lastmod>2023-01-15T14:49:02-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://siliconion.github.io/post/</loc>
+    <lastmod>2023-01-15T14:49:02-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://siliconion.github.io/</loc>
+    <lastmod>2023-01-15T14:49:02-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://siliconion.github.io/post_zh_tw/newyearresolution2023/</loc>
     <lastmod>2022-12-29T23:30:05-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://siliconion.github.io/post_zh_tw/</loc>
-    <lastmod>2022-12-29T23:30:05-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://siliconion.github.io/</loc>
     <lastmod>2022-12-29T23:30:05-06:00</lastmod>
   </url>
   
@@ -29,11 +39,6 @@
   
   <url>
     <loc>http://siliconion.github.io/post/hugo-deploy-to-github/</loc>
-    <lastmod>2020-01-02T01:06:36-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://siliconion.github.io/post/</loc>
     <lastmod>2020-01-02T01:06:36-06:00</lastmod>
   </url>
   
