@@ -45,7 +45,7 @@
   name="twitter:description"
   content="This is a cautionary tale about how code deteriorates.
 The following is a code snippets that is running in production, re-written to obscure proprietary info.
-function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MIGRATE TO API  db = get_database_conn_A() case &#39;B&#39;: return call_service_B_API(uuid) break default: return null } sql = `SELECT * FROM logs WHERE uuid = ${uuid}` db.query(sql, function(err, result) { if (err) throw err return result }) }  The code is very confusing and very hard to read.|"
+function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MIGRATE TO API db = get_database_conn_A() case &#39;B&#39;: return call_service_B_API(uuid) break default: return null } sql = `SELECT * FROM logs WHERE uuid = ${uuid}` db.query(sql, function(err, result) { if (err) throw err return result }) }  The code is very confusing and very hard to read.|"
 />
 <meta name="twitter:image:src" content="" />
 <meta name="twitter:domain" content="http://siliconion.github.io/post/a-tale-of-code-not-maintained/" />
@@ -98,25 +98,25 @@ function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MI
 
 <p>The following is a code snippets that is running in production, re-written to obscure proprietary info.</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">get_logs</span>(<span style="color:#a6e22e">dbName</span>, <span style="color:#a6e22e">uuid</span>) {
-    <span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">dbName</span>) {
-        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">:</span>
-            <span style="color:#75715e">// TODO MIGRATE TO API
-</span><span style="color:#75715e"></span>            <span style="color:#a6e22e">db</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">get_database_conn_A</span>()
-        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;B&#39;</span><span style="color:#f92672">:</span>
-            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">call_service_B_API</span>(<span style="color:#a6e22e">uuid</span>)
-            <span style="color:#66d9ef">break</span>
-        <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
-            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span>
+<pre><code class="language-javascript">function get_logs(dbName, uuid) {
+    switch (dbName) {
+        case 'A':
+            // TODO MIGRATE TO API
+            db = get_database_conn_A()
+        case 'B':
+            return call_service_B_API(uuid)
+            break
+        default:
+            return null
     }
     
-    <span style="color:#a6e22e">sql</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`SELECT * FROM logs WHERE uuid = </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">uuid</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span> 
-    <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">query</span>(<span style="color:#a6e22e">sql</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">result</span>) {
-        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">err</span>) <span style="color:#66d9ef">throw</span> <span style="color:#a6e22e">err</span>
-        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">result</span>
+    sql = `SELECT * FROM logs WHERE uuid = ${uuid}` 
+    db.query(sql, function(err, result) {
+        if (err) throw err
+        return result
     })
 }
-</code></pre></div>
+</code></pre>
 
 <p>The code is very confusing and very hard to read. What it really does is either query database A, or call service B for data. It&rsquo;s a simple if-else.</p>
 
@@ -124,7 +124,7 @@ function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MI
 
 <p>How can the code be this bad? The code was not started this way. The initial commit was:</p>
 
-<pre><code class="language-node">function get_logs(dbName, uuid) {
+<pre><code class="language-javascript">function get_logs(dbName, uuid) {
     switch (dbName) {
         case 'A':
             db = get_database_conn_A()
@@ -158,7 +158,7 @@ function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MI
 
 <p>However, the code now becomes:</p>
 
-<pre><code class="language-node">function get_logs(dbName, uuid) {
+<pre><code class="language-javascript">function get_logs(dbName, uuid) {
     switch (dbName) {
         case 'A':
             // TODO MIGRATE TO API
@@ -194,7 +194,7 @@ function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MI
 
 <p>The next thing happened was that, service C got depreciated. This makes the code extra ridiculous, as the switch statement can simply be an if-else.</p>
 
-<pre><code class="language-node">function get_logs(dbName, uuid) {
+<pre><code class="language-javascript">function get_logs(dbName, uuid) {
     switch (dbName) {
         case 'A':
             // TODO MIGRATE TO API
@@ -219,7 +219,7 @@ function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MI
 
 <p>When API for service B is introduced, to solve the two problems mentioned above, the code should&rsquo;ve been refactored to:</p>
 
-<pre><code class="language-node">function get_logs(sercieName, uuid) {
+<pre><code class="language-javascript">function get_logs(sercieName, uuid) {
     if (sercieName == 'B') {
         return call_service_B_API(uuid)
     } else {
@@ -249,7 +249,7 @@ function query_database_for_logs(db_coon, uuid){
 
 <p>And when service C was removed, the code can further be:</p>
 
-<pre><code class="language-node">function get_logs(serviceName, uuid) {
+<pre><code class="language-javascript">function get_logs(serviceName, uuid) {
     if (serviceName == 'A')
         return get_logs_from_service_A(uuid)
     else if (serviceName == 'B') {
@@ -276,7 +276,7 @@ Any reviewer that only read the title of the MR and the diff, which honestly is 
 
 <p>On top of &ldquo;read the whole function/file after making a change&rdquo;, &ldquo;make sure variable name makes sense&rdquo;, more modular mode can alleviate this problem. The initial commit could&rsquo;ve been broken down more, as:</p>
 
-<pre><code class="language-node">function get_logs(sercieName, uuid) {
+<pre><code class="language-javascript">function get_logs(sercieName, uuid) {
     db = get_database_conn(service)
     return query_database_for_logs(db, uuid)
 }

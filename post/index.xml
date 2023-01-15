@@ -20,7 +20,7 @@
       <guid>http://siliconion.github.io/post/a-tale-of-code-not-maintained/</guid>
       <description>This is a cautionary tale about how code deteriorates.
 The following is a code snippets that is running in production, re-written to obscure proprietary info.
-function get_logs(dbName, uuid) { switch (dbName) { case &amp;#39;A&amp;#39;: // TODO MIGRATE TO API  db = get_database_conn_A() case &amp;#39;B&amp;#39;: return call_service_B_API(uuid) break default: return null } sql = `SELECT * FROM logs WHERE uuid = ${uuid}` db.query(sql, function(err, result) { if (err) throw err return result }) }  The code is very confusing and very hard to read.</description>
+function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MIGRATE TO API db = get_database_conn_A() case &#39;B&#39;: return call_service_B_API(uuid) break default: return null } sql = `SELECT * FROM logs WHERE uuid = ${uuid}` db.query(sql, function(err, result) { if (err) throw err return result }) }  The code is very confusing and very hard to read.</description>
     </item>
     
     <item>
