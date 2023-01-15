@@ -269,10 +269,13 @@ function get_logs_from_service_B(uuid) {
 
 <h2 id="more-modular-code">More modular code</h2>
 
-<p>Each time a change is introduced, the code should&rsquo;ve been refactored. Why didn&rsquo;t it happen? Because people often have tunnel vision. And, the code review tool also justifies the tunnel vision. Here are the merge request for the two changes:
-<a href="https://github.com/siliconion/wireboundcloud/pull/1/files">merge request file diff for using API for service B</a>
-<a href="https://github.com/siliconion/wireboundcloud/pull/2/files">merge request file diff for removing service C</a>
-Any reviewer that only read the title of the MR and the diff, which honestly is all of us, would pass the code review.</p>
+<p>Each time a change is introduced, the code should&rsquo;ve been refactored. Why didn&rsquo;t it happen? Because people often have tunnel vision. And, the code review tool also justifies the tunnel vision. Here are the merge request for the two changes:</p>
+
+<p><a href="https://github.com/siliconion/wireboundcloud/pull/1/files">merge request file diff for using API for service B</a></p>
+
+<p><a href="https://github.com/siliconion/wireboundcloud/pull/2/files">merge request file diff for removing service C</a></p>
+
+<p>Any reviewer that only read the title of the MR and the diff, which honestly is all of us, would pass the code review.</p>
 
 <p>On top of &ldquo;read the whole function/file after making a change&rdquo;, &ldquo;make sure variable name makes sense&rdquo;, more modular mode can alleviate this problem. The initial commit could&rsquo;ve been broken down more, as:</p>
 
