@@ -1,78 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>http://siliconion.github.io/post/a-tale-of-code-not-maintained/</loc>
-    <lastmod>2023-01-15T17:03:09-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://siliconion.github.io/post/</loc>
-    <lastmod>2023-01-15T17:03:09-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://siliconion.github.io/</loc>
-    <lastmod>2023-01-15T17:03:09-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://siliconion.github.io/post_zh_tw/newyearresolution2023/</loc>
-    <lastmod>2022-12-29T23:30:05-06:00</lastmod>
-  </url>
-  
-  <url>
+    <loc>http://siliconion.github.io/post_zh_tw/newyearresolution2024/</loc>
+    <lastmod>2024-02-18T21:24:49-06:00</lastmod>
+  </url><url>
     <loc>http://siliconion.github.io/post_zh_tw/</loc>
-    <lastmod>2022-12-29T23:30:05-06:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2024-02-18T21:24:49-06:00</lastmod>
+  </url><url>
+    <loc>http://siliconion.github.io/</loc>
+    <lastmod>2024-02-18T21:24:49-06:00</lastmod>
+  </url><url>
+    <loc>http://siliconion.github.io/post/a-tale-of-code-not-maintained/</loc>
+    <lastmod>2024-01-01T10:08:37-06:00</lastmod>
+  </url><url>
+    <loc>http://siliconion.github.io/post/</loc>
+    <lastmod>2024-01-01T10:08:37-06:00</lastmod>
+  </url><url>
+    <loc>http://siliconion.github.io/post_zh_tw/newyearresolution2023/</loc>
+    <lastmod>2024-01-01T10:08:37-06:00</lastmod>
+  </url><url>
     <loc>http://siliconion.github.io/post_zh_tw/newyearresolution2022/</loc>
-    <lastmod>2022-12-26T09:26:03-06:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2024-01-01T10:08:37-06:00</lastmod>
+  </url><url>
     <loc>http://siliconion.github.io/post_zh_tw/newyearresolution2021/</loc>
-    <lastmod>2021-01-05T22:46:23-06:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2024-01-01T10:08:37-06:00</lastmod>
+  </url><url>
     <loc>http://siliconion.github.io/post/hugo-deploy-to-github/</loc>
-    <lastmod>2020-01-02T01:06:36-06:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2024-01-01T10:08:37-06:00</lastmod>
+  </url><url>
     <loc>http://siliconion.github.io/post_zh_tw/newyearresolution2020/</loc>
-    <lastmod>2021-01-05T21:42:52-06:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2024-01-01T10:08:37-06:00</lastmod>
+  </url><url>
     <loc>http://siliconion.github.io/post_zh_tw/newyearresolution2010s/</loc>
-    <lastmod>2020-01-01T23:48:21-06:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2024-01-01T10:08:37-06:00</lastmod>
+  </url><url>
     <loc>http://siliconion.github.io/post/what-to-make-at-atx-diversity-hackathon/</loc>
-    <lastmod>2019-09-10T21:13:45-05:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2024-01-01T10:08:37-06:00</lastmod>
+  </url><url>
     <loc>http://siliconion.github.io/post/why-you-should-come-to-atx-diversity-hackathon/</loc>
-    <lastmod>2019-09-10T19:39:35-05:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2024-01-01T10:08:37-06:00</lastmod>
+  </url><url>
     <loc>http://siliconion.github.io/about/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+    <lastmod>2024-01-01T10:08:37-06:00</lastmod>
+  </url><url>
     <loc>http://siliconion.github.io/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://siliconion.github.io/tags/</loc>
   </url>
-  
 </urlset>

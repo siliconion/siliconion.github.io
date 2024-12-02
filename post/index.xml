@@ -1,59 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Siliconion</title>
     <link>http://siliconion.github.io/post/</link>
     <description>Recent content in Posts on Siliconion</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy;Siliconion 2019</copyright>
-    <lastBuildDate>Sun, 15 Jan 2023 11:00:00 -0500</lastBuildDate>
-    
-	<atom:link href="http://siliconion.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 01 Jan 2024 10:08:37 -0600</lastBuildDate>
+    <atom:link href="http://siliconion.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A tale of code not maintained</title>
       <link>http://siliconion.github.io/post/a-tale-of-code-not-maintained/</link>
       <pubDate>Sun, 15 Jan 2023 11:00:00 -0500</pubDate>
-      
       <guid>http://siliconion.github.io/post/a-tale-of-code-not-maintained/</guid>
-      <description>This is a cautionary tale about how code deteriorates.
-The following is a code snippets that is running in production, re-written to obscure proprietary info.
-function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MIGRATE TO API db = get_database_conn_A() case &#39;B&#39;: return call_service_B_API(uuid) break default: return null } sql = `SELECT * FROM logs WHERE uuid = ${uuid}` db.query(sql, function(err, result) { if (err) throw err return result }) }  The code is very confusing and very hard to read.</description>
+      <description>&lt;p&gt;This is a cautionary tale about how code deteriorates.&lt;/p&gt;&#xA;&lt;p&gt;The following is a code snippets that is running in production, re-written to obscure proprietary info.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-node&#34; data-lang=&#34;node&#34;&gt;function get_logs(dbName, uuid) {&#xA;    switch (dbName) {&#xA;        case &amp;#39;A&amp;#39;:&#xA;            // TODO MIGRATE TO API&#xA;            db = get_database_conn_A()&#xA;        case &amp;#39;B&amp;#39;:&#xA;            return call_service_B_API(uuid)&#xA;            break&#xA;        default:&#xA;            return null&#xA;    }&#xA;    &#xA;    sql = `SELECT * FROM logs WHERE uuid = ${uuid}` &#xA;    db.query(sql, function(err, result) {&#xA;        if (err) throw err&#xA;        return result&#xA;    })&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The code is very confusing and very hard to read. What it really does is either query database A, or call service B for data. It&amp;rsquo;s a simple if-else.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hugo deploy to GitHub</title>
       <link>http://siliconion.github.io/post/hugo-deploy-to-github/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 -0500</pubDate>
-      
       <guid>http://siliconion.github.io/post/hugo-deploy-to-github/</guid>
-      <description>This blog is powered by Hugo. It is so easy to use! Hugo blogs can be easily deployed to GitHub by following this tutorial.
-The only 2 things I had problem with were:
- When first deployed, my GitHub page kept 404 although all html files are update in the my .github.io repo. To solve this, go to &amp;ldquo;settings&amp;rdquo; in the repo, scroll down to &amp;ldquo;GitHub Pages&amp;rdquo;, make sure the correct branch is chosen in the source.</description>
+      <description>&lt;p&gt;This blog is powered by &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;. It is so easy to use! Hugo blogs can be easily deployed to GitHub by following &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;this tutorial&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The only 2 things I had problem with were:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;When first deployed, my GitHub page kept 404 although all html files are update in the my &lt;!-- raw HTML omitted --&gt;.github.io repo. To solve this, go to &amp;ldquo;settings&amp;rdquo; in the repo, scroll down to &amp;ldquo;GitHub Pages&amp;rdquo;, make sure the correct branch is chosen in the source. Also choose a Jekyll theme even we are not using Jekyll.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>What To Make At ATX Diversity Hackathon</title>
       <link>http://siliconion.github.io/post/what-to-make-at-atx-diversity-hackathon/</link>
       <pubDate>Sun, 08 Sep 2019 13:18:48 -0500</pubDate>
-      
       <guid>http://siliconion.github.io/post/what-to-make-at-atx-diversity-hackathon/</guid>
-      <description>In terms of what to make, there are 3 aspects - the content, the technology and the goal.
-For content, there&amp;rsquo;s no limitation at the Austin diversity hackathon. A lot of hackathons have themes - use of certain products, or help certain causes. At #ATXDIVHACK, social conscious projects that promotes inclusion, diversity are strongly encouraged. But you can make anything (within our CoC of course)!
-In terms of the technology used, here are some ideas and past projects:</description>
+      <description>&lt;p&gt;In terms of what to make, there are 3 aspects - the content, the technology and the goal.&lt;/p&gt;&#xA;&lt;p&gt;For content, there&amp;rsquo;s no limitation at the Austin diversity hackathon. A lot of hackathons have themes - use of certain products, or help certain causes. At #ATXDIVHACK, social conscious projects that promotes inclusion, diversity are strongly encouraged. But you can make anything (within our CoC of course)!&lt;/p&gt;&#xA;&lt;p&gt;In terms of the technology used, here are some ideas and past projects:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Why You Should Come to ATX Diversity Hackathon</title>
       <link>http://siliconion.github.io/post/why-you-should-come-to-atx-diversity-hackathon/</link>
       <pubDate>Sun, 08 Sep 2019 11:39:28 -0500</pubDate>
-      
       <guid>http://siliconion.github.io/post/why-you-should-come-to-atx-diversity-hackathon/</guid>
-      <description>The Annual Austin Diversity Hackathon - #ATXDivHack - is coming back for the 5th time in September 20~22, 2019! If you are still wondering if you should come &amp;ndash; you totally should! And here are the reasons.
-I love #ATXDivHack so much. I&amp;rsquo;ve &amp;ldquo;hacked&amp;rdquo; for the last 3 years, and am the organizer this year. #ATXDIVHACK is a beginner friendly, inclusive, and fun event. The goal is for all participants to: * Learn something new * Make friends and connections * Have fun!</description>
+      <description>&lt;p&gt;The Annual Austin Diversity Hackathon - #ATXDivHack - is coming back for the 5th time in September 20~22, 2019! If you are still wondering if you should come &amp;ndash; you totally should! And here are the reasons.&lt;/p&gt;&#xA;&lt;p&gt;I love #ATXDivHack so much. I&amp;rsquo;ve &amp;ldquo;hacked&amp;rdquo; for the last 3 years, and am the organizer this year. #ATXDIVHACK is a beginner friendly, inclusive, and fun event. The goal is for all participants to:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
