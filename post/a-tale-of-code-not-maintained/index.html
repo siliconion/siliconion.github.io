@@ -1,109 +1,16 @@
 <!DOCTYPE html>
-<html
-  class=""
-  lang="en-us"
-  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
->
-  <head>
-    <meta charset="utf-8" />
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="description" content="" />
-<meta name="HandheldFriendly" content="True" />
-<meta name="MobileOptimized" content="320" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
-<meta name="keywords" content="">
-
-
-<meta property="og:type" content="article" />
-<meta property="og:description" content="" />
-<meta property="og:title" content="A tale of code not maintained" />
-<meta property="og:site_name" content="Siliconion" />
-<meta property="og:image" content="" />
-<meta property="og:image:type" content="image/jpeg" />
-<meta property="og:image:width" content="" />
-<meta property="og:image:height" content="" />
-<meta property="og:url" content="http://siliconion.github.io/post/a-tale-of-code-not-maintained/" />
-<meta property="og:locale" content="en-us" />
-<meta property="article:published_time" content="2023-01-15
-" /> <meta property="article:modified_time" content="2023-01-15
-" />
-
-
-
-
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@siliconion" />
-<meta name="twitter:creator" content="@siliconion" />
-<meta
-  name="twitter:title"
-  content="A tale of code not maintained | Siliconion"
-/>
-<meta
-  name="twitter:description"
-  content="This is a cautionary tale about how code deteriorates.
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="This is a cautionary tale about how code deteriorates.
 The following is a code snippets that is running in production, re-written to obscure proprietary info.
-function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MIGRATE TO API db = get_database_conn_A() case &#39;B&#39;: return call_service_B_API(uuid) break default: return null } sql = `SELECT * FROM logs WHERE uuid = ${uuid}` db.query(sql, function(err, result) { if (err) throw err return result }) }  The code is very confusing and very hard to read.|"
-/>
-<meta name="twitter:image:src" content="" />
-<meta name="twitter:domain" content="http://siliconion.github.io/post/a-tale-of-code-not-maintained/" />
-
-
-
-    <title>A tale of code not maintained</title>
-    <link rel="canonical" href="http://siliconion.github.io/post/a-tale-of-code-not-maintained/" />
-
-
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
-/>
-
-<link rel="stylesheet" href="http://siliconion.github.iocss/style.css" />
-
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
-/>
-
-
-
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  </head>
-
-
-<body
-  lang="en-us"
-  class="sans-serif w-90 w-80-m w-60-ns center mv2 mv5-ns"
-  itemscope
-  itemtype="http://schema.org/Article"
->
-  
-  <span class="b">/ </span>
-  <a href="http://siliconion.github.io" class="b bb bw1 pb1 no-underline black">Siliconion</a>
-  <span class="b"> / </span>
-  <a href="/post" class="b bb bw1 pb1 no-underline black">blog</a>
-
-  <section id="main" class="mt5">
-    <h1 itemprop="name" id="title">A tale of code not maintained</h1>
-    <span class="f6 gray">January 15, 2023</span>
-
-      <article itemprop="articleBody" id="content" class="w-90 lh-copy">
-        
-
-<p>This is a cautionary tale about how code deteriorates.</p>
-
-<p>The following is a code snippets that is running in production, re-written to obscure proprietary info.</p>
-
-<pre><code class="language-javascript">function get_logs(dbName, uuid) {
+function get_logs(dbName, uuid) {
     switch (dbName) {
-        case 'A':
+        case &#39;A&#39;:
             // TODO MIGRATE TO API
             db = get_database_conn_A()
-        case 'B':
+        case &#39;B&#39;:
             return call_service_B_API(uuid)
             break
         default:
@@ -116,23 +23,71 @@ function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MI
         return result
     })
 }
-</code></pre>
+The code is very confusing and very hard to read. What it really does is either query database A, or call service B for data. It&rsquo;s a simple if-else.">  
 
-<p>The code is very confusing and very hard to read. What it really does is either query database A, or call service B for data. It&rsquo;s a simple if-else.</p>
+  <title>
+    
+      A tale of code not maintained
+    
+  </title>
 
-<h2 id="initial-commit">Initial commit</h2>
 
-<p>How can the code be this bad? The code was not started this way. The initial commit was:</p>
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.571f38b6e2a29120873a1adc44f3b86346a78a9782bc5f1caf418e00723a7355943dd28d03bfb508dd13a1d53ef231c02912b687f6aab373021a4a5dd651837e.css" integrity="sha512-Vx84tuKikSCHOhrcRPO4Y0anipeCvF8cr0GOAHI6c1WUPdKNA7&#43;1CN0TodU&#43;8jHAKRK2h/aqs3MCGkpd1lGDfg==" />
+  
+</head>
+<body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
 
-<pre><code class="language-javascript">function get_logs(dbName, uuid) {
+
+<article>
+    <p class="post-meta">
+        <time datetime="2023-01-15 11:00:00 -0500 -0500">
+            2023-01-15
+        </time>
+    </p>
+
+    <h1>A tale of code not maintained</h1>
+
+    
+
+    <p>This is a cautionary tale about how code deteriorates.</p>
+<p>The following is a code snippets that is running in production, re-written to obscure proprietary info.</p>
+<pre tabindex="0"><code class="language-node" data-lang="node">function get_logs(dbName, uuid) {
     switch (dbName) {
-        case 'A':
+        case &#39;A&#39;:
+            // TODO MIGRATE TO API
+            db = get_database_conn_A()
+        case &#39;B&#39;:
+            return call_service_B_API(uuid)
+            break
+        default:
+            return null
+    }
+    
+    sql = `SELECT * FROM logs WHERE uuid = ${uuid}` 
+    db.query(sql, function(err, result) {
+        if (err) throw err
+        return result
+    })
+}
+</code></pre><p>The code is very confusing and very hard to read. What it really does is either query database A, or call service B for data. It&rsquo;s a simple if-else.</p>
+<h2 id="initial-commit">Initial commit</h2>
+<p>How can the code be this bad? The code was not started this way. The initial commit was:</p>
+<pre tabindex="0"><code class="language-node" data-lang="node">function get_logs(dbName, uuid) {
+    switch (dbName) {
+        case &#39;A&#39;:
             db = get_database_conn_A()
             break
-        case 'B':
+        case &#39;B&#39;:
             db =  get_database_conn_B()
             break
-        case 'C':
+        case &#39;C&#39;:
             db = get_database_conn_C()
             break
         default:
@@ -146,27 +101,20 @@ function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MI
         return result
     })
 }
-</code></pre>
-
-<p>This code actually do make sense.</p>
-
+</code></pre><p>This code actually do make sense.</p>
 <h2 id="change-1-using-api-for-service-b">Change 1: Using API for service B</h2>
-
 <p>Ideally, service should not directly connect to other services&rsquo; databases. At a fast-paced startup, sometimes you have to take on tech debt. This is justifiable.</p>
-
 <p>The good things is, the developer actually came back and made an API. But, for service B only. This is again justifiable. Any improvement is better than nothing.</p>
-
 <p>However, the code now becomes:</p>
-
-<pre><code class="language-javascript">function get_logs(dbName, uuid) {
+<pre tabindex="0"><code class="language-node" data-lang="node">function get_logs(dbName, uuid) {
     switch (dbName) {
-        case 'A':
+        case &#39;A&#39;:
             // TODO MIGRATE TO API
             db = get_database_conn_A()
             break
-        case 'B':
+        case &#39;B&#39;:
             return call_service_B_API(uuid)
-        case 'C':
+        case &#39;C&#39;:
             // TODO MIGRATE TO API
             db = get_database_conn_C()
             break
@@ -181,26 +129,20 @@ function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MI
         return result
     })
 }
-</code></pre>
-
-<p>The functionality works fine. However, the code became confusing. The main problems are:</p>
-
+</code></pre><p>The functionality works fine. However, the code became confusing. The main problems are:</p>
 <ul>
 <li>The parameter dbName is not correct anymore, as we are not connecting to database B. The parameter should be renamed to coreServices.</li>
 <li>The code to query database after the switch statement is confusing. The early return for service B is not highlighted.</li>
 </ul>
-
 <h2 id="change-2-depreciation-of-service-c">Change 2: Depreciation of service C</h2>
-
 <p>The next thing happened was that, service C got depreciated. This makes the code extra ridiculous, as the switch statement can simply be an if-else.</p>
-
-<pre><code class="language-javascript">function get_logs(dbName, uuid) {
+<pre tabindex="0"><code class="language-node" data-lang="node">function get_logs(dbName, uuid) {
     switch (dbName) {
-        case 'A':
+        case &#39;A&#39;:
             // TODO MIGRATE TO API
             db = get_database_conn_A()
             break
-        case 'B':
+        case &#39;B&#39;:
             return call_service_B_API(uuid)
         default:
             return null
@@ -213,14 +155,10 @@ function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MI
         return result
     })
 }
-</code></pre>
-
-<h2 id="refactors-that-should-ve-happened">Refactors that should&rsquo;ve happened</h2>
-
+</code></pre><h2 id="refactors-that-shouldve-happened">Refactors that should&rsquo;ve happened</h2>
 <p>When API for service B is introduced, to solve the two problems mentioned above, the code should&rsquo;ve been refactored to:</p>
-
-<pre><code class="language-javascript">function get_logs(sercieName, uuid) {
-    if (sercieName == 'B') {
+<pre tabindex="0"><code class="language-node" data-lang="node">function get_logs(sercieName, uuid) {
+    if (sercieName == &#39;B&#39;) {
         return call_service_B_API(uuid)
     } else {
         db = get_database_conn(service)
@@ -229,9 +167,9 @@ function get_logs(dbName, uuid) { switch (dbName) { case &#39;A&#39;: // TODO MI
 }
 
 function get_database_conn(sercieName){
-    if (sercieName == 'A') {
+    if (sercieName == &#39;A&#39;) {
         return get_database_conn_A()
-    } else if (sercieName == 'C') {
+    } else if (sercieName == &#39;C&#39;) {
         return get_database_conn_C()
     } else {
       throw new Error()
@@ -245,14 +183,11 @@ function query_database_for_logs(db_coon, uuid){
         return result
     })
 }
-</code></pre>
-
-<p>And when service C was removed, the code can further be:</p>
-
-<pre><code class="language-javascript">function get_logs(serviceName, uuid) {
-    if (serviceName == 'A')
+</code></pre><p>And when service C was removed, the code can further be:</p>
+<pre tabindex="0"><code class="language-node" data-lang="node">function get_logs(serviceName, uuid) {
+    if (serviceName == &#39;A&#39;)
         return get_logs_from_service_A(uuid)
-    else if (serviceName == 'B') {
+    else if (serviceName == &#39;B&#39;) {
         return get_logs_from_service_B(uuid)
     }
     return null
@@ -265,32 +200,24 @@ function get_logs_from_service_A(uuid) {
 function get_logs_from_service_B(uuid) {
     // call service B API
 }
-</code></pre>
-
-<h2 id="more-modular-code">More modular code</h2>
-
-<p>Each time a change is introduced, the code should&rsquo;ve been refactored. Why didn&rsquo;t it happen? Because people often have tunnel vision. And, the code review tool also justifies the tunnel vision. Here are the merge request for the two changes:</p>
-
-<p><a href="https://github.com/siliconion/wireboundcloud/pull/1/files">merge request file diff for using API for service B</a></p>
-
-<p><a href="https://github.com/siliconion/wireboundcloud/pull/2/files">merge request file diff for removing service C</a></p>
-
-<p>Any reviewer that only read the title of the MR and the diff, which honestly is all of us, would pass the code review.</p>
-
+</code></pre><h2 id="more-modular-code">More modular code</h2>
+<p>Each time a change is introduced, the code should&rsquo;ve been refactored. Why didn&rsquo;t it happen? Because people often have tunnel vision. And, the code review tool also justifies the tunnel vision. Here are the merge request for the two changes:
+<a href="https://github.com/siliconion/wireboundcloud/pull/1/files">merge request file diff for using API for service B</a>
+<a href="https://github.com/siliconion/wireboundcloud/pull/2/files">merge request file diff for removing service C</a>
+Any reviewer that only read the title of the MR and the diff, which honestly is all of us, would pass the code review.</p>
 <p>On top of &ldquo;read the whole function/file after making a change&rdquo;, &ldquo;make sure variable name makes sense&rdquo;, more modular mode can alleviate this problem. The initial commit could&rsquo;ve been broken down more, as:</p>
-
-<pre><code class="language-javascript">function get_logs(sercieName, uuid) {
+<pre tabindex="0"><code class="language-node" data-lang="node">function get_logs(sercieName, uuid) {
     db = get_database_conn(service)
     return query_database_for_logs(db, uuid)
 }
 
 function get_database_conn(sercieName){
     switch (dbName) {
-        case 'A':
+        case &#39;A&#39;:
             return get_database_conn_A()
-        case 'B':
+        case &#39;B&#39;:
             return get_database_conn_B()
-        case 'C':
+        case &#39;C&#39;:
             return get_database_conn_C()
         default:
           throw new Error()
@@ -304,38 +231,20 @@ function query_database_for_logs(db_coon, uuid){
         return result
     })
 }
-</code></pre>
+</code></pre><p>This will force the refactoring happen when we introduce API for service B.</p>
 
-<p>This will force the refactoring happen when we introduce API for service B.</p>
+</article>
 
-      </article>
-
-      
-      <span class="f6 gray mv3" title="Lastmod: January 15, 2023. Published at: 2023-01-15.">
+                
+    
         
-          <span class="i">last modified</span> January 15, 2023
-        
-      </span>
-
-      
-
-  </section>
-
-  <footer>
-    <div>
-      <p class="f6 gray mt6 lh-copy">
-        &copy;Siliconion 2019
-      </p>
-    </div>
-  </footer>
-  
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
-
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
+        <footer class="site-footer">
+            <p>&copy; 2024 Siliconion</p>
+        </footer>
+    
 
 
-
-  </body>
+            </div>
+        </main>
+    </body>
 </html>

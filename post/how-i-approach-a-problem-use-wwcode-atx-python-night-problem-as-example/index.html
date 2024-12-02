@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="I am probably the only person who claim to be good at whiteboarding interviews. Not saying my way is the only way, but here&rsquo;s a demo of how I approach a problem.
+This question is from Women Who Code Austin Python meetup on 1/15/2020:
+
+Write a function that accepts a string and returns a dictionary of words as the keys, and the number of times each word appeared as a value. Make sure that the mapping works with words reardless of case, and handle punctuation.">  
+
+  <title>
+    
+      How I approach a problem - use WWCode ATX Python night problem as example
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.18e297f9c7b534b566a0a070712181cc69b4f1155e1b8d1fe541304605c4f6ab7d7460a557a004bf67fd09787aef348cf619f6dd8d310362898a41b1465ddd4d.css" integrity="sha512-GOKX&#43;ce1NLVmoKBwcSGBzGm08RVeG40f5UEwRgXE9qt9dGClV6AEv2f9CXh67zSM9hn23Y0xA2KJikGxRl3dTQ==" />
+  
+</head>
+<body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+
+<article>
+    <p class="post-meta">
+        <time datetime="2020-01-31 00:00:00 -0500 -0500">
+            2020-01-31
+        </time>
+    </p>
+
+    <h1>How I approach a problem - use WWCode ATX Python night problem as example</h1>
+
+    
+
+    <p>I am probably the only person who claim to be good at whiteboarding interviews. Not saying my way is the only way, but here&rsquo;s a demo of how I approach a problem.</p>
+<p>This question is from Women Who Code Austin Python meetup on 1/15/2020:</p>
+<blockquote>
+<p>Write a function that accepts a string and returns a dictionary of words as the keys, and the number of times each word appeared as a value. Make sure that the mapping works with words reardless of case, and handle punctuation.</p>
+</blockquote>
+<p>The first step is to clarify what we are trying to do. This is one of the hardest part!</p>
+<p>The original problem is a very long sentence and hard for me to wrap my head around. So I break this into the following:</p>
+<ol>
+<li>We are writing a function. The input of the function is a string.</li>
+<li>The function returns a dictionary. Dictionaries are key-value pairs. And&hellip;</li>
+<li>The keys are words.</li>
+<li>The values is the number of times each word appeared.</li>
+</ol>
+<p>This is still pretty abstract. So I would try to work on an example.
+As we know, the input is a string. So let&rsquo;s say, our input is &ldquo;What would a woodchuck chuck if a woodchuck could chuck wood&rdquo;.</p>
+<p>What would the output be? Reading the problem again, the output is a dictionary. So I would write down: <code>{}</code> to start.</p>
+<p>Now I can fill in the keys. It is not very clear what words, but since the only clue so far is the input, I can assume it&rsquo;s the words in the input sentance.
+I also know that the keys in a dictionary are all unique. So I can assume my output to be like:</p>
+<pre tabindex="0"><code>{
+  &#39;What&#39;: ?,
+  &#39;would&#39;: ?,
+  &#39;a&#39;: ?,
+  &#39;woodchuck&#39;: ?,
+  &#39;chuck&#39;: ?,
+  &#39;if&#39;: ?,
+  &#39;could&#39;: ?,
+  &#39;wood&#39;: ?
+}
+</code></pre><p>And the values are the number of times each word appeared. So the output should be:</p>
+<pre tabindex="0"><code>{
+  &#39;What&#39;: 1,
+  &#39;would&#39;: 1,
+  &#39;a&#39;: 2,
+  &#39;woodchuck&#39;: 2,
+  &#39;chuck&#39;: 2,
+  &#39;if&#39;: 1,
+  &#39;could&#39;: 1,
+  &#39;wood&#39;: 1
+}
+</code></pre><p>Now I know my goal, I can start to figure out how I can turn the tougue twister into a dictionary.
+Note that I am still thinking in terms of actual example, not code.
+Since I just finished deriving this example, I subconsciously know how solve this.
+This step is about writing down my thought process into plane English.
+My mental model is:</p>
+<ol>
+<li>First look at the first word in the sentence. A word is all the letters between 2 spaces.</li>
+<li>Check if I&rsquo;ve seen this word.</li>
+<li>If not, I&rsquo;ll add this to the key. And record that this word appears once.</li>
+<li>If I&rsquo;ve seen it, I&rsquo;ll find the previous record, and mark that the word appears one more time.</li>
+<li>Look at the second word in the sentence. Do all the things I did above.</li>
+<li>After all the words are looked at, return the word count.</li>
+</ol>
+<p>Once I have this, I can start translating English into code!
+First step would define the function signature. I usually write down my input and output at this time too:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">count_words</span>(input_string):
+</span></span><span style="display:flex;"><span>    output_dict <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> output_dict
+</span></span></code></pre></div><p>&ldquo;Working through all the words&rdquo; indicates that I need a loop.
+The loop loops through a list of words.
+The first step would be creating a list of words.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">count_words</span>(input_string):
+</span></span><span style="display:flex;"><span>    input_list <span style="color:#f92672">=</span> input_string<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39; &#39;</span>)
+</span></span><span style="display:flex;"><span>    output_dict <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> output_dict
+</span></span></code></pre></div><p>And now comes the loop, and fill in the steps I described.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">count_words</span>(input_string):
+</span></span><span style="display:flex;"><span>    output_dict <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>    word_list <span style="color:#f92672">=</span> input_string<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39; &#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> word_list:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> word <span style="color:#f92672">in</span> output_dict:
+</span></span><span style="display:flex;"><span>            output_dict[word] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            output_dict[word] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> output_dict
+</span></span></code></pre></div><p>{&lsquo;How&rsquo;: 1,
+&lsquo;much&rsquo;: 1,
+&lsquo;wood&rsquo;: 2,
+&lsquo;would&rsquo;: 1,
+&lsquo;a&rsquo;: 2,
+&lsquo;woodchuck&rsquo;: 2,
+&lsquo;chuck&rsquo;: 2,
+&lsquo;if&rsquo;: 1,
+&lsquo;could&rsquo;: 1}</p>
+
+</article>
+
+                
+    
+        
+        <footer class="site-footer">
+            <p>&copy; 2024 Siliconion</p>
+        </footer>
+    
+
+
+            </div>
+        </main>
+    </body>
+</html>
