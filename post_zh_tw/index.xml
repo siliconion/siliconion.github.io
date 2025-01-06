@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy;Siliconion 2019</copyright>
-    <lastBuildDate>Sun, 18 Feb 2024 21:24:49 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jan 2025 22:10:57 -0600</lastBuildDate>
     <atom:link href="http://siliconion.github.io/post_zh_tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Year Resolution - 2025</title>
+      <link>http://siliconion.github.io/post_zh_tw/newyearresolution2025/</link>
+      <pubDate>Sat, 28 Dec 2024 15:00:00 -0500</pubDate>
+      <guid>http://siliconion.github.io/post_zh_tw/newyearresolution2025/</guid>
+      <description>&lt;h2 id=&#34;2024-回顧&#34;&gt;2024 回顧&lt;/h2&gt;&#xA;&lt;h3 id=&#34;工作&#34;&gt;工作&lt;/h3&gt;&#xA;&lt;p&gt;2024 年只說「預計是個忙碌的Ｑ１」，因為第一季之後，公司上層也沒什麼計畫。Ｑ１都在做 IVR 重構的事，本來預計能上線的，不過還是拖到了Ｑ２。&lt;/p&gt;&#xA;&lt;p&gt;Ｑ２就突然來了個 reorg，接了我之前一直覺得「好險不是我的服務」的 Email 服務，還有理論上應該很有發展性的 marketing platform。大部分時間都畫在試圖理解 Email 服務（超乎想像的爛，歎為觀止，理解不能），還有 marketing platform 到底要幹嘛（上層自己也搞不清楚）。說到底就是開了許多會，做了許多 team building event。個人覺得是超級沒有生產力的一季，但莫名其妙贏了公司的Ｑ２的獎。&lt;/p&gt;&#xA;&lt;p&gt;Ｑ３開始做 marketing platform。遇到各種阻礙，要是還在Ａ家，一個月就做完了，但這裡 permission 缺東缺西，一堆莫名的 DevOps 設定，真的心很累。專案就這麼拖到Ｑ４。好在公司在推新產品，找到藉口轉向。&lt;/p&gt;&#xA;&lt;p&gt;因為改組，組裡來了兩個 staff，不像之前只有我是資深，什麼事都要盯。新的產品經理是個需要一把抓的個性，所以整體而言真的蠻閒的。閒到一個想換工作的程度，但Ｑ３開始很多出遊和假期，於是就這麼拖著。&lt;/p&gt;&#xA;&lt;p&gt;然後！年底宣布又要 reorg 了。本組要接 identity service。我覺得這應該蠻有趣的，identity 和 marketing 分一起也很合理，但產品經理強烈反彈，工程的大頭們對他頗有微詞。接下的情勢要發展感覺會很微妙。&lt;/p&gt;&#xA;&lt;p&gt;同時現在的ＥＭ要轉去專做別組。本組會有ＥＭ空缺。我已經和上兩層和三層的老闆提過我有興趣了。據上層說，Ｑ１會開缺，然後必須經過面試流程。&lt;/p&gt;&#xA;&lt;p&gt;⭐去年的願望： 每季回顧一次當季的成效，根據回顧，可以發展自己的技能，考進階的ＡＷＳ證照，或是認真換工作。&lt;/p&gt;&#xA;&lt;p&gt;第二三季的回顧都有一種有夠廢的感覺。第二季就算了，第三四季真的是有種浪費生命的感覺，到一種真的不想回顧的程度。如果不是有ＥＭ缺，真的應該要認真換工作。&lt;/p&gt;&#xA;&lt;h3 id=&#34;健康運動興趣&#34;&gt;健康＆運動＆興趣&lt;/h3&gt;&#xA;&lt;p&gt;2024 十二月底一早上瑜伽課時，突然覺得現在可能是我身體素質最好的時候。這麼說也不盡然，還是生了不少病，感冒也都拖蠻久才好。深蹲（勉強 135 X 6）和硬舉（好久沒測）的重量都下降。&lt;/p&gt;&#xA;&lt;p&gt;但臥推有到 70 X 8，引體向上 2023 十月終於做了一下，2024 巔峰達到四下，但普遍還在兩到三下徘徊。瑜珈終於可以做烏鴉式了！&lt;/p&gt;&#xA;&lt;p&gt;戶外攀岩開始可以 lead 10b。5.9 算是蠻穩，在哪都不太會猶豫地爬的程度了。Top rope 也在 project 像是 T-roofic detour 10d，juniper 11a 之類的路線了。&lt;/p&gt;&#xA;&lt;p&gt;室內的話，redpoint 第一個 11a！基本上 5.10 除了 overhang 大多數都可以 flash，11ab 中高機率可以 TR flash，最近有幾個 12ab 竟然也磨得到了。跟去年比大概進步兩個 minor grade。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>New Year Resolution - 2024</title>
       <link>http://siliconion.github.io/post_zh_tw/newyearresolution2024/</link>

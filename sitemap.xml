@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://siliconion.github.io/post_zh_tw/newyearresolution2025/</loc>
+    <lastmod>2025-01-05T22:10:57-06:00</lastmod>
+  </url><url>
+    <loc>http://siliconion.github.io/post_zh_tw/</loc>
+    <lastmod>2025-01-05T22:10:57-06:00</lastmod>
+  </url><url>
     <loc>http://siliconion.github.io/posts/</loc>
     <lastmod>2024-12-02T00:40:34-06:00</lastmod>
   </url><url>
     <loc>http://siliconion.github.io/post_zh_tw/newyearresolution2024/</loc>
-    <lastmod>2024-02-18T21:24:49-06:00</lastmod>
-  </url><url>
-    <loc>http://siliconion.github.io/post_zh_tw/</loc>
     <lastmod>2024-02-18T21:24:49-06:00</lastmod>
   </url><url>
     <loc>http://siliconion.github.io/post/a-tale-of-code-not-maintained/</loc>
